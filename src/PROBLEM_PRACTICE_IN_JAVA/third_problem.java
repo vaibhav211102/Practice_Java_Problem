@@ -1,4 +1,4 @@
-package GeeksForGeeks;
+package PROBLEM_PRACTICE_IN_JAVA;
 import java.util.*;
 public class third_problem {
     static int Fibonacci(int n) {

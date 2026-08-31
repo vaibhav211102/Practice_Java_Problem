@@ -1,4 +1,4 @@
-package GeeksForGeeks;
+package PROBLEM_PRACTICE_IN_JAVA;
 
 public class first_problem {
     public static void main(String[] args) {

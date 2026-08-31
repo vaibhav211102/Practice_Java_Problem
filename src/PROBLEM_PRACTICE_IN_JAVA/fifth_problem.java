@@ -1,4 +1,4 @@
-package GeeksForGeeks;
+package PROBLEM_PRACTICE_IN_JAVA;
 import java.util.*;
 public class fifth_problem {
     static int power(int n , int p){

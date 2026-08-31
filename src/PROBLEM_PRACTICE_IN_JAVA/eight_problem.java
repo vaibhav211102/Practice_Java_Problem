@@ -1,4 +1,4 @@
-package GeeksForGeeks;
+package PROBLEM_PRACTICE_IN_JAVA;
 import java.util.*;
 public class eight_problem {
     public static void main(String[] args) {
