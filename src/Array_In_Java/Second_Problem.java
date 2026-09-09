@@ -22,6 +22,53 @@ public class Second_Problem {
             System.out.print(a[i] + " ");
         }
 
+        int currentSum  = 0;
+        int maxSum = a[0];
 
+        for (int i = 0; i < a.length; i++) {
+            currentSum = currentSum + a[i];
+            if (currentSum > maxSum) {
+                maxSum = currentSum;
+            }
+
+            if (currentSum < 0) {
+                currentSum = 0;
+            }
+        }
+
+        System.out.println();
+
+        System.out.println("Maximun Subarray sum : " + maxSum);
+
+//        int[] b = new int[size - 1];
+
+//        int maxSum = 0;
+//
+//        for (int i = 0; i < a.length - 1; i++) {
+//            if (a[i] > a[i+1]) {
+//                maxSum += a[i];
+//            }
+//            else{
+//                maxSum += a[i+1];
+//            }
+//        }
+
+//        System.out.println();
+//
+//        System.out.println("Array with greater element : ");
+//
+//        for (int i = 0; i < b.length; i++) {
+//            System.out.print(b[i] + " ");
+//        }
+//
+//        int maxSum = 0;
+//
+//        for (int i = 0; i < b.length; i++) {
+//            maxSum += b[i];
+//        }
+//
+//        System.out.println();
+//
+//        System.out.println(maxSum);
     }
 }
