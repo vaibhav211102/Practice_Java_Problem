@@ -1,7 +1,10 @@
 package Array_In_Java;
+
 import java.util.Scanner;
+
 public class Nine_Problem {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the size of array : ");
@@ -10,6 +13,7 @@ public class Nine_Problem {
         int[] a = new int[size];
 
         System.out.println("Enter the element of the array : ");
+
         for (int i = 0; i < size; i++) {
             a[i] = sc.nextInt();
         }
@@ -20,18 +24,36 @@ public class Nine_Problem {
             System.out.print(a[i] + " ");
         }
 
-        int secondSmallest = a[0];
         int smallest = a[0];
+        int secondSmallest = 0;
+        boolean found = false;
 
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 1; i < a.length; i++) {
+
             if (a[i] < smallest) {
+
                 secondSmallest = smallest;
                 smallest = a[i];
+                found = true;
+
+            } else if (a[i] > smallest) {
+
+                if (!found || a[i] < secondSmallest) {
+                    secondSmallest = a[i];
+                    found = true;
+                }
             }
         }
 
         System.out.println();
 
-        System.out.println("Second Smallest : " + secondSmallest);
+        if (found) {
+            System.out.println("Smallest : " + smallest);
+            System.out.println("Second Smallest : " + secondSmallest);
+        } else {
+            System.out.println("Second Smallest does not exist.");
+        }
+
+        sc.close();
     }
 }
