@@ -2,7 +2,7 @@ package Array_In_Java;
 
 import java.util.Scanner;
 
-public class Fourteen_Problem {
+public class Larger_Element_In_Row {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

@@ -2,16 +2,17 @@ package Array_In_Java;
 
 import java.util.Scanner;
 
-public class Twelfth_Problem {
+public class Diff_Max_And_Min_Element_Array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the size of array : ");
+        System.out.print("Enter the size of the array : ");
         int size = sc.nextInt();
 
         int[] a = new int[size];
 
-        System.out.println("Enter the array element : ");
+        System.out.println();
+        System.out.println("Enter the element of the array : ");
 
         for (int i = 0; i < a.length; i++) {
             a[i] = sc.nextInt();
@@ -24,21 +25,22 @@ public class Twelfth_Problem {
             System.out.print(a[i] + " ");
         }
 
-        int countEven = 0;
-        int countOdd = 0;
+        int max = a[0];
+        int min = a[0];
 
         for (int i = 0; i < a.length; i++) {
-            if (a[i] % 2 == 0) {
-                countEven++;
+            if (a[i] > max) {
+                max = a[i];
             }
-            else{
-                countOdd++;
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] < min) {
+                min = a[i];
             }
         }
 
         System.out.println();
-
-        System.out.println("Even Element : " + countEven);
-        System.out.println("Odd Element : " + countOdd);
+        System.out.println("Difference between max and min element : " + (max - min));
     }
 }
