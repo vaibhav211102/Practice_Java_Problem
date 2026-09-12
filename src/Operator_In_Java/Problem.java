@@ -26,5 +26,10 @@ public class Problem {
 //        ++a;
 //        a--;
 //        System.out.println(a);
+
+//        I need to learn associativity and precedence
+
+//        int x = 10 + 5 * 2;
+//        System.out.println(x);
     }
 }
