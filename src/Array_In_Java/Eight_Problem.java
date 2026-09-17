@@ -24,7 +24,7 @@ public class Eight_Problem {
             System.out.print(a[i] + " ");
         }
 
-        int largest = 0;
+        int largest = a[0];
         int secondlargest = 0;
 
 //        for (int i = 0; i < a.length; i++) {
@@ -40,6 +40,8 @@ public class Eight_Problem {
             if (a[i] > largest) {
                 secondlargest = largest;
                 largest = a[i];
+            } else if (secondlargest < a[i] && largest != a[i]) {
+                secondlargest = a[i];
             }
         }
 
